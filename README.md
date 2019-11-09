@@ -1,3 +1,3 @@
 # stepic
-Программирование на Python
-https://stepik.org/course/67/syllabus
+Программирование на Python </br>
+https://stepik.org/course/67/

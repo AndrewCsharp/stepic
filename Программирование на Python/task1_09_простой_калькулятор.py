@@ -34,68 +34,38 @@ Sample Input 3:
 Sample Output 3:
 0.5
 """
-x, y, operation = input(), input(), input().lower()
 
-res = None
-
-try:
-    x = float(x)
-    y = float(y)
-except ValueError:
-    print("Некорректные данные")
-    exit()
-
-if y == 0.0 and operation in ["/", "mod", "div"]:
-    res = "Деление на 0!"
-elif operation == "+":
-    res = x + y
-elif operation == "-":
-    res = x - y
-elif operation == "/":
-    res = x / y
-elif operation == "*":
-    res = x * y
-elif operation == "mod":
-    res = x % y
-elif operation == "pow":
-    res = x ** y
-elif operation == "div":
-    res = x // y
-else:
-    res = "операция не определена"
-
-print(res)
-'''
 a = float(input())
 b = float(input())
-op = input()
-res= None
+operation = input()
 
-if op == '+':
-    res = a + b
-elif op == '-':
-    res = a - b
-elif op == '/':
+result = None
+
+if operation == '+':
+    result = a + b
+elif operation == '-':
+    result = a - b
+elif operation == '/':
     if b != 0:
-        res = a / b
+        result = a / b
     else:
-        res = 'Деление на 0!'
-elif op == '*':
-    res = a * b
-elif op == 'mod':
+        result = 'Деление на 0!'
+elif operation == '*':
+    result = a * b
+elif operation == 'mod':
     if b != 0:
-        res = a % b
+        result = a % b
     else:
-        res = 'Деление на 0!'
-elif op == 'pow':
-    res = a ** b
-elif op == 'div':
+        result = 'Деление на 0!'
+elif operation == 'pow':
+    result = a ** b
+elif operation == 'div':
     if b != 0:
-        res = a // b
+        result = a // b
     else:
-        res = 'Деление на 0!'
+        result = 'Деление на 0!'
 else:
-    res = 'операция не определена'
+    result = 'операция не определена'
 
-print(res)
-'''
+print(result)
+

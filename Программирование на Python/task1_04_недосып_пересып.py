@@ -30,26 +30,15 @@ Sample Input 3:
 Sample Output 3:
 Недосып
 
-A = int(input()) #не менее
-B = int(input()) #не более
-H = int(input()) #по факту
-
-if A <= H <= B:
-    print("Это нормально")
-elif B > H:
-    print("Недосып")
-else:
-    print("Пересып")
-
-
 """
-A = int(input()) #не менее
-B = int(input()) #не более
-H = int(input()) #по факту
 
-if H > B:
-    print("Пересып")
-elif H < A:
+A = int(input()) # рекомендуется спать
+B = int(input()) # стоит спать не более B
+H = int(input()) # спит H часов в сутки
+
+if H < A:
     print("Недосып")
+elif H > B:
+    print("Пересып")
 else:
     print("Это нормально")

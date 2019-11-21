@@ -23,29 +23,3 @@ if int(bilet[0])+int(bilet[1])+int(bilet[2]) == int(bilet[3])+int(bilet[4])+int(
     print('Счастливый')
 else:
     print('Обычный')
-
-"""
-===========================================================================================
-
-strNum = input()
-
-sumL = 0
-sumR = 0
-
-for i in range(len(strNum)):
-  if i < 3:
-      sumL += int(strNum[i])
-  else:
-      sumR += int(strNum[i])
-
-if sumL == sumR:
-  print("Счастливый")
-else:
-  print("Обычный")
-
-===========================================================================================
-
-s = input()
-print('Счастливый' if int(s[0])+int(s[1])+int(s[2]) == int(s[3])+int(s[4])+int(s[5]) else 'Обычный')
-
-"""

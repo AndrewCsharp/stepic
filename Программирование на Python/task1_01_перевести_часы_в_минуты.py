@@ -9,5 +9,8 @@ Sample Input:
 Sample Output:
 450
 """
-print(int(input()) * 60 + int(input()))
 
+X = int(input())
+Y = int(input())
+
+print(X * 60 + Y)

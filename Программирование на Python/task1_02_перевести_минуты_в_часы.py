@@ -14,5 +14,8 @@ Sample Output 1:                Sample Output 2:
 0                               32
 
 """
+
 x = int(input())
-print(x // 60, x % 60, sep="\n")
+
+print(x // 60)
+print(x % 60)

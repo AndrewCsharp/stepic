@@ -51,29 +51,16 @@ if typeFigure == "круг":
     r = int(input())
     sq = 3.14 * r ** 2
 elif typeFigure == "прямоугольник":
-    a, b = int(input()), int(input())
+    a = int(input())
+    b = int(input())
     sq = a * b
 elif typeFigure == "треугольник":
-    a, b, c = int(input()), int(input()), int(input())
+    a = int(input())
+    b = int(input())
+    c = int(input())
     p = (a + b + c) / 2.0
     sq = (p * (p - a) * (p - b) * (p - c)) ** 0.5
 else:
     print("Фигура не определена")
 
 print(sq)
-
-"""
-room = input()
-if room == "прямоугольник":
-    print( int(input()) * int(input()) )
-elif room == "круг":
-    print(int(input()) ** 2 * 3.14)
-elif room == "треугольник":
-    a = int(input())
-    b = int(input())
-    c = int(input())
-    p = (a + b + c) / 2
-    print( (p * (p - a ) * (p - b) * (p - c)) ** 0.5 )
-else:
-    print('неизвестная фигура')
-"""

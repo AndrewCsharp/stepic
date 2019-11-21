@@ -18,13 +18,12 @@ Sample Output 1:                   Sample Output 2:
 2                                  50
 
 """
+
 X = int(input())
 H = int(input())
 M = int(input())
-# X, H, M = (int(input()) for i in range(3))
 
-X += H * 60 + M
-a = X // 60
-b = X % 60
+x = X + H * 60 + M
 
-print(a, b, sep="\n")
+print(x // 60)
+print(x % 60)

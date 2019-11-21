@@ -15,19 +15,9 @@ Sample Input 2:
 -20
 Sample Output 2:
 False
-"""
-'''
-num = int(input())
-if -15 < num <= 12 or 14 < num < 17 or  num >= 19:
-    print("True")
-else:
-    print("False")
-    
-----------------------------------------------------
-#x = int(input())
-#print((-15 < x <=12) or (14 < x < 17) or (x >= 19))
 
-'''
+"""
+
 num = int(input())
-res = True if (-15 < num <= 12 or 14 < num < 17 or  num >= 19) else False
+res = True if (-15 < num <= 12 or 14 < num < 17 or num >= 19) else False
 print(res)
